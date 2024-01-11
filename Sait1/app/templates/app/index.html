@@ -1,0 +1,41 @@
+﻿{% extends "app/layout.html" %}
+{% load staticfiles %}
+{% block content %}
+
+<div class="jumbotron">
+    <h1>PrintLab</h1>
+    <p class="lead">PrintLab у нас вы можете заказать 3-D печать любой сложности.</p>
+    <p><a href="https://www.djangoproject.com/" class="btn btn-primary btn-large">Узнать больше &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Хочу заниматься 3-D печатью</h2>
+        <p>
+            Если у вас возникло желание самим заняться 3-D печатью, но вы не знаете
+            с чего начатать,какие принтеры выбрать и какие сложности могут поджидать,
+            то мы предлагаем посмотреть вам это небольшое ознакомительное видео.
+        </p>
+        <p><a class="btn btn-default" href="https://www.youtube.com/watch?v=LxqGsFAPOLc&ab_channel=%D0%9A%D0%BB%D1%83%D0%B1DNS">Узнать больше &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Библиотека готовых 3-D моделей</h2>
+        <p>
+            Здесь вы сможете найти как бесплатную библиотеку,
+            так и магазин уже готовых 3-D моделей.
+        </p>
+        <p><a class="btn btn-default" href="https://3dtoday.ru/3d-models">Узнать больше &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>ArtStation</h2>
+        <p>
+            Для людей занимающихся 3-D моделированием ,предлагаем воспользоваться одним из
+            крупнейших сайтов для профессиональных художников в сфере digital media.
+            Портфолио на ArtStation — это стандарт индустрии для художников, работающих в сфере кино,
+            разработки игр, индустриальном дизайне.
+        </p>
+        <p><a class="btn btn-default" href="https://www.artstation.com/?sort_by=community&dimension=all">Узнать больше &raquo;</a></p>
+    </div>
+</div>
+
+{% endblock %}

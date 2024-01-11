@@ -1,0 +1,91 @@
+body {
+    padding-top: 120px;
+    padding-bottom: 20px;
+    background: url(../content/fon1.jpg);
+    background-size: cover;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+p1 {
+    color: pink;
+    font-weight: bold;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+p8 {
+    color: black;
+    font-weight: bold;
+    background-color: gold;
+}
+p10 {
+    color: black;
+    font-weight: bold;
+    background-color: gold;
+}
+.lead {
+    color: black;
+    font-weight: bold;
+}
+h2 {
+    color: deeppink;
+}
+h3 {
+    color: deeppink;
+    background-color: gold;
+}
+h10 {
+    color: black;
+    font-weight: bold;
+    background-color: gold;
+}
+div.col {
+    float: left; /*Задаем обтекание*/
+    width: 320px; /*Фиксируем ширину блока*/
+    padding: 30px;
+    margin-right: 10px;
+    text-align: center; /*Центрируем текст по горизонтали*/
+}
+p1 {
+    color: lemonchiffon;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: cadetblue;
+}
+.jumbotron {
+    background-color: cadetblue;
+    opacity: 0.8;
+}

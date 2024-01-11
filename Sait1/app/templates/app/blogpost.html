@@ -1,0 +1,29 @@
+﻿{% extends "app/layout.html" %}
+{% block content %}
+<h3> {{post_1.title}} </h3>
+<p8> {{post_1.content|linebreaksbr}} </p8> {# вывод текста по абзацам#}
+
+{% if user.is_authenticated %}
+<h3>Добавить комментарий</h3>
+<form method="POST">
+    {% csrf_token %} {# защита от атак CSRF#}
+    <div>
+        {{form.as_p}}
+        <button type="submit" class="save btn btn-default"> Отправить комментарий</button>
+    </div>
+</form>
+{% else %}
+<h3>
+    Для добавления своего комментария, пожалуйста, авторизуйтесь
+</h3>
+{% endif %}
+
+
+{% for comment in comments %}
+<hr />
+<h3> {{comment.date}} </h3>
+<h3> {{comment.author}} </h3>
+<p8> {{comment.text|linebreaksbr}} </p8>
+{% endfor %}
+
+{% endblock %}

@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+{% extends "app/layout.html" %}
+{% load staticfiles %}
+{% block content %}
+<h2>{{ title }}.</h2>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <title>table-layout</title>
+  <style>
+   table {
+    table-layout: fixed; /* Фиксированная ширина ячеек */
+    width: 100%; /* Ширина таблицы */
+   }
+   .col1 { width: 160px; }
+   .coln { width: 60px; }
+      </style>
+</head>
+<body>
+    <table border="1">
+   <col class="col1">
+   <col span="9" class="coln">
+   <tr> 
+       <td>Сайты партнеров</td>
+       <td>Чем занимаются</td><td>ИНН</td>
+       <td>Номер для связи</td>
+   </tr>
+   <tr> 
+    <td><strong> 3Dprintus:</strong><a href ="http://3dprintus.ru/" target="_blank"> <img width="30" height="30" src="{% static 'app/content/3dprintus.bmp' %}" alt="3dprintus.ru"/> </a></td>
+       <td>3D печать и фрезировка</td>
+       <td>7727339254</td>
+       <td>+7 (495) 120-33-19</td>
+   </tr>
+   <tr>
+    <td><strong>InCraft: </strong><a href ="https://incraft3d.ru/catalog/3d-modeli/" target="_blank"> <img width="30" height="30" src="{% static 'app/content/incraft3d.bmp' %}" alt="incraft3d.ru"/> </a></td>
+       <td>Каталог моделей для 3D печати</td> <td>4536877645</td><td>+7 (495) 150-05-78</td>
+   </tr>
+   <tr>
+    <td><strong>ЯДоставка: </strong><a href ="https://dostavka.yandex.ru/" target="_blank"> <img width="30" height="30" src="{% static 'app/content/9dostavka.bmp' %}" alt="dostavka.yandex.ru"/> </a></td>
+       <td>Перевозка/доставка</td>
+       <td>123516123</td>
+       <td>+7 (495) 155-38-14</td>
+   </tr>
+  </table> 
+    <ul>
+<li><strong>Сайт : 3Dprintus</strong><a href ="http://3dprintus.ru/" target="_blank"> <img width="20" height="20" src="{% static 'app/content/3dprintus.bmp' %}"  alt="3dprintus.ru"/> </a></li>
+<li><strong>Сайт : InCraft </strong><a href ="https://incraft3d.ru/catalog/3d-modeli/" target="_blank"> <img width="20" height="20" src="{% static 'app/content/incraft3d.bmp' %}"  alt="incraft3d.ru"/> </a></li>
+<li><strong>Сайт : ЯДоставка </strong><a href ="https://dostavka.yandex.ru/" target="_blank"> <img width="" height="20" src="{% static 'app/content/9dostavka.bmp' %}" alt="dostavka.yandex.ru"/> </a></li>              
+    </ul>
+</body>
+</html>
+
+{% endblock %}
